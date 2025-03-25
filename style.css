@@ -106,3 +106,6 @@ footer {
     font-size: 199px;
     color: red;
 }
+.contato ul li a img {
+    margin-right: 8px;
+}
