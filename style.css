@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    color: white;
+    height: 100%;
+}
+
+header {
+    /*
+    background-color: #333;
+    */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+header nav {
+    list-style-type: none;
+}
+header nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+/* Adiciona o " | " entre os links, exceto no último */
+header nav ul li:not(:last-child)::after {
+    content: " | ";
+    color: white;
+    margin-left: 10px;
+    margin-right: 0px; 
+}
+/* --- FIM DO HEADER --- */
+
+/* --- MAIN --- */
+
+main {
+    padding: 20px;
+}
+section {
+    margin-bottom: 20px;
+}
+.variavel {
+    padding: 10px;  /* Remove o padding */
+    margin: 0;   /* Remove a margem */
+    background-color: #ffffff;   /* Cor de fundo */
+    border-radius: 5px;  /* Bordas arredondadas, se desejar */
+}
+.variavel pre {
+    margin-left: -10%;
+    margin-bottom: -1%;
+    font-family: 'Courier New', monospace;
+    color: rgb(0, 99, 0);
+    box-sizing: border-box;
+}
+/* --- SECTION 2 --- */
+
+.github {
+    padding: 10px;
+    margin: 0;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+.github pre {
+    margin-left: -10%;
+    font-family: 'Courier New', monospace;
+    color: rgb(0, 99, 0);
+    box-sizing: border-box;
+    margin-bottom: -1%;
+}
+
+/* --- COMEÇO DO FOOTER --- */
+
+footer {
+    position: fixed;     /* Comando necessário pra manter o rodapé no fundo */
+    bottom: 0;           /*Este comando vai ajudar a manter o rodapé no fundo, pq no body eu descrevi altura em 100%*/
+    width: 100%;
+    background-color: #1b1b1b;
+    color: white;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+}
+.contato ul {
+    list-style-type: none;
+}
+.contato ul li {
+    display: inline;
+}
+.contato ul li a {
+    color: cyan;
+    text-decoration: none;
+}
+.contato ul li a:hover {
+    color: greenyellow;
+    text-decoration: none;
+}
+.contato ul li a:visited {
+    color: blue;
+}
+.contato ul li a:active{
+    font-size: 199px;
+    color: red;
+}
