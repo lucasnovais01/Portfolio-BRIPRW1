@@ -35,6 +35,28 @@ header nav ul li:not(:last-child)::after {
     margin-left: 10px;
     margin-right: 0px; 
 }
+
+/* --- BOTÕES --- */
+
+div {
+    display: flex; /* Utiliza o modelo de layout flexbox */
+    justify-content: left; /* Alinha os botões horizontalmente no centro */
+    gap: 10px; /* Define o espaçamento entre os botões */
+    margin-bottom: 20px;
+}
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #555;
+}
+
 /* --- FIM DO HEADER --- */
 
 /* --- MAIN --- */
@@ -51,7 +73,7 @@ section {
     background-color: #ffffff;   /* Cor de fundo */
     border-radius: 5px;  /* Bordas arredondadas, se desejar */
 }
-.variavel pre {
+pre {
     margin-left: -10%;
     margin-bottom: -1%;
     font-family: 'Courier New', monospace;

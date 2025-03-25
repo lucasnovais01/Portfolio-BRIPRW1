@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="style.css">  <!-- Link para puxar as alterações no CSS --> 
 </head>
 <body>
-    <script src="script.js"></script> <!-- Código para puxar as alterações do javascript -->
-
     <header>
         <nav>
             <ul>
@@ -26,8 +24,6 @@
     <main>
         <section>
             <h3>Aula 18/03/2025 - Introdução javascript</h3><br>
-            <h4>VARIÁVEIS:</h4><br>
-<!-- Em fase de construções 
             <div>
                 <button id="variaveisBtn">Variáveis</button>
                 <button id="tipo_dadosBtn">Tipos de Dados</button>
@@ -36,8 +32,6 @@
                 <button id="funcoesBtn">Funções</button>
                 <button id="objetosBtn">Objetos</button>                
             </div>
-            <br>
--->
              <!-- pre é o um comando dificil de usar, é tipo um p -->
             <section class="variavel" id="variavelSection">
                 <pre>
@@ -55,8 +49,292 @@
                     var x = 10, y = 20, z = 5, a = "valor", b = "total"; 
                     console.log();
                 </pre>
-            </section>            
+            </section>
+            <section class="tipo_dados" id="tipoDadosSection" style="display:none;">
+                <pre>
+                    //notas:
+                    // o Javascript não precisa "tipar" a variável
+                    
+                    // Exercicíos:
+                    
+                    var nome = "Isac";  //isto é uma string
+                    console.log(nome);  //Comando para chamar o console
+                    
+                    var sobrenome = "Santos"; // para concaquenar
+                    
+                    var idade = "25"; //este é um número
+                    console.log(idade);
+                    
+                    var ensinoSuperior = true // Boolean
+                    
+                    var hora; //undefined //null
+                    
+                    var  novoDados = {} //Object
+                    
+                    console.log(typeof nome);
+                    
+                    var nomeCompleto = nome + '' + sobrenome;
+                    console.log(nomeCompleto);
+                    
+                    
+                    var escola = "IFSP"; //string
+                    var unidade = 'IFSP';
+                    
+                    
+                    var frase = 'Nome' + nome + ' idade ' + idade;
+                    
+                    console.log(frase);   //tudo vira string
+                                          //resultado final sempre será uma string
+                    
+                    //template string
+                    
+                    var frase2 = 'Nome ${nome} idade ${idade}';
+                    
+                    console.log(frase2);
+                </pre>
+            </section>
+
+            <section class="num_operadores" id="numOperadoresSection" style="display:none;">
+                <pre>
+                    // números
+
+                    var idade = 29;
+                    var gols = 1000;
+                    var pi = 3.14;
+                    
+                    // operadores
+                    
+                    var soma = 100 + 50;
+                    var subtracao = 100 - 50;
+                    var multiplicacao = 100 * 50;
+                    var divisao = 100 / 50;
+                    var expoente = 100 ** 2;
+                    var modulo = 99 % 2;
+                    
+                    var soma_valores = '100' + 50; //somente na soma ele concatena
+                    console.log(soma_valores);
+                    
+                    var divisao_valores = '100'/50;
+                    console.log (divisao_valores);
+                    
+                    var multiplicao_valores = '100' * 2;
+                    console.log (multiplicao_valores);
+                    
+                    var divisao_X = 'Comprei 100' / 2;
+                    console.log(divisao_X);
+                    
+                    // ******************
+                    
+                    var total1 = 20 + 5 * 2;
+                    console.log(total1);
+                    
+                    var total2 = 20 / (2 * 5);
+                    console.log(total2);
+                    
+                    // ******************
+                    
+                    // Qual é o resultado da seguinte operação
+                    
+                    var valor = 10 + 5 * 2 / 2 + 20;
+                    
+                    // Crie duas expressões que retornem um NaN
+                    
+                    var multiplicao_X = 'Levei 100' / 2;
+                    console.log(multiplicao_X);
+                    
+                    // Somar a string '200' com o número 50 e retornar 250
+                    
+                    var somastring = +'200' + 50; //É possível converter string em número colocando o sinal antes
+                    console.log(somastring);
+                </pre>
+            </section>
+
+            <section class="booleans" id="booleansSection" style="display:none;">
+                <pre>
+                    //booleans
+
+                    var possuiFaculdade = false; // dependendo se for true ou false muda a resposta
+                    var possuiEspecializacao = false;
+                    
+                    if (possuiFaculdade) {
+                      console.log("Terminou a faculdade");
+                    }
+                    else {
+                      console.log ("Não terminou a faculdade");
+                    }
+                    
+                    if (possuiEspecializacao){
+                      console.log("O aluno graduou-se em Analista de sistema");
+                    }
+                    else {
+                      if(possuiFaculdade){
+                        console.log("O aluno possui faculdade");
+                      }
+                      else {
+                        console.log ("O aluno ainda está cursando a Faculdade");
+                      }
+                    }
+                    
+                    // Truthy e Falsy
+                    
+                    if (false);
+                    if (0);
+                    if(NaN);
+                    if(undefined);
+                    
+                    if(1);
+                    if(true);
+                    if('Joao');
+                    if(-5);
+                    
+                    // negando !
+                    
+                    if(!true); // falso
+                    if(!1); // falso
+                    if(undefined); // true
+                    
+                    // Operadores lógicos
+                    
+                    console.log (10 > 5);
+                    console.log (5 > 10);
+                    console.log (20 < 10);
+                    console.log (10 <= 10);
+                    console.log (10 >= 11);
+                    
+                    // Operadores de comparação
+                    var Operadores = 'Operadores de comparação:';
+                    console.log (Operadores);
+                    
+                    console.log (10 == 10);
+                    console.log (10 == '10');
+                    console.log (10 === 10);
+                    console.log (10!=15);
+                    
+                    console.log (true && true);
+                    console.log (true && false);
+                    console.log (false && true);
+                    console.log ('Gato' && 'Cachorro');
+                    console.log ((5-5) && (5+5));
+                    
+                    console.log (true || true);
+                    console.log (true || false);
+                    console.log (false || true);
+                    console.log ('gato' || 'cachorro');
+                </pre>
+            </section>
+
+            <section class="funcoes" id="funcoesSection" style="display:none;">
+                <pre>
+                    function areaQuadrado(lado){
+                        return lado * lado;
+                      }
+                      
+                      console.log (areaQuadrado(5));
+                      
+                      function pi (){
+                        return 3.14;
+                      }
+                      
+                      var total = 5 * pi();
+                      
+                      console.log (total);
+                      
+                      //parâmetros e argumentos
+                      // var, let , const (famosos)
+                      
+                      var parametro = 'parâmetro e argumentos: ';
+                      console.log(parametro);
+                      
+                      
+                      function calcularImc (peso, altura){
+                        const imc = peso / (altura ** 2); // ** potencia
+                        return imc;
+                      }
+                      
+                      var valorImc = calcularImc (80, 1.80);
+                      console.log (valorImc);
+                      
+                      var secao = 'Function: sua cor favorita: ';
+                      console.log (secao);
+                      
+                      function suaCorFavorita (corFavorita){
+                        if (corFavorita == 'Azul'){
+                          return 'você gosta do mar';
+                        }
+                        else {
+                          if (corFavorita === 'verde') {
+                            return 'você gosta do palmeiras';
+                          }
+                          else {
+                            return 'você não gosta de nada';
+                          }
+                        }
+                      }
+                      console.log(suaCorFavorita('verde'));
+                      
+                      // escopo = global
+                      var totalPaises = 193;
+                      
+                      function visitarPaises (paisesVisitados){
+                      
+                        return `Falta visitar ${totalPaises - paisesVisitados}`;
+                      }
+                      console.log (totalPaises);
+                      
+                      console.log (visitarPaises(1));
+                      
+                      
+                      var profissao = 'Programador';
+                      console.log(profissao);
+                      
+                      function dadosPessoa(){
+                        var nome = 'Sergio';
+                        var idade = 49;
+                      
+                        function novosDados(){
+                          var endereco = "Pedro Cavalo";
+                          var cep = 16200;
+                      
+                          return `${nome}, ${idade}, ${endereco}, ${profissao}`;
+                        }
+                        return novosDados();
+                      }
+                      console.log (dadosPessoa());
+                </pre>
+            </section>
+
+            <section class="objetos" id="objetosSection" style="display:none;">
+                <pre>
+                    // Objeto sempre possui atributos e propriedade
+                    // A função é o que ele faz
+                    // A funcionalidade é chamada de comportamento, que é chamado também de método
+                    // O objeto possui variaveis e funcoes, a soma dos dois
+                    
+                    var pessoa = {
+                      nome: 'Francisco',
+                      idade: 59,
+                      profissao: 'psor',
+                      temFaculdade: true,
+                    
+                      mostrarNome(){
+                        return this.nome; // this para não dar ideia de redundância
+                      }
+                    }
+                    
+                    // aqui temos o objeto pessoa definido
+                    
+                    console.log (pessoa.nome); // para acessar as variaveis usasse o ponto
+                    
+                    // O objeto tem propriedade e métodos
+                    // Objeto é a representação de alguma coisa do mundo real
+                    
+                    console.log (pessoa.mostrarNome());
+                </pre>
+            </section>
         </section>
+
+        
+        <!-- nova seção com informações -->
         <section>
             <h3>Como fazer upload no repositório do GitHub</h3><br>
             <h4>Primeiro:</h4><br>
@@ -85,5 +363,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script> <!-- Código para puxar as alterações do javascript -->
 </body>
 </html>
