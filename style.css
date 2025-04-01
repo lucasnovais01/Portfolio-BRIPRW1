@@ -36,10 +36,10 @@ header nav ul li:not(:last-child)::after {
     margin-right: 0px; 
 }
 
-/* --- BOTÕES --- */
+/* --- BOTÕES do cabeçalho --- */
 
 div {
-    display: flex; /* Utiliza o modelo de layout flexbox */
+    display: flex; /* layout flexbox */
     justify-content: left; /* Alinha os botões horizontalmente no centro */
     gap: 10px; /* Define o espaçamento entre os botões */
     margin-bottom: 20px;
@@ -67,11 +67,11 @@ main {
 section {
     margin-bottom: 20px;
 }
-.variavel {
-    padding: 10px;  /* Remove o padding */
-    margin: 0;   /* Remove a margem */
-    background-color: #ffffff;   /* Cor de fundo */
-    border-radius: 5px;  /* Bordas arredondadas, se desejar */
+.telaPre {
+    padding: 10px;
+    margin: 0;
+    background-color: #ffffff;
+    border-radius: 5px;
 }
 pre {
     margin-left: -10%;
@@ -81,13 +81,13 @@ pre {
     box-sizing: border-box;
 }
 /* --- SECTION 2 GITHUB--- */
-.github {
+.gitHub {
     padding: 10px;
     margin: 0;
     background-color: #ffffff;
     border-radius: 5px;
 }
-.github pre {
+.gitHub pre {
     margin-left: -10%;
     font-family: 'Courier New', monospace;
     color: rgb(0, 99, 0);
@@ -103,30 +103,47 @@ footer {
     width: 100%;
     background-color: #1b1b1b;
     color: white;
+    padding: 10px 0 10px 0;
+    display: flex;
+    justify-content: center;
     text-align: center;
-    padding: 10px 0px 10px 0px;
 }
+.rodape {
+    display: flex;
+    align-items: center; /* Alinha o conteúdo no centro verticalmente */
+}
+.rodape p {
+    margin: 0;
+    padding-right: 10px;
+}
+
+/* icone github*/
 .contato ul {
-    list-style-type: none;
+    list-style: none;
+    padding: 0;
 }
 .contato ul li {
-    display: inline;
+    display: inline-flex;
+    align-items: center; /* Alinha a imagem e o texto no centro verticalmente */
 }
 .contato ul li a {
     color: cyan;
     text-decoration: none;
+    display: flex;
+    align-items: center;
 }
+/*Frescuras -> deletar depois */
 .contato ul li a:hover {
     color: greenyellow;
-    text-decoration: none;
 }
 .contato ul li a:visited {
     color: blue;
 }
-.contato ul li a:active{
+.contato ul li a:active {
     font-size: 199px;
     color: red;
 }
 .contato ul li a img {
     margin-right: 8px;
+    margin-left: 10px;
 }
