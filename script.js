@@ -1,4 +1,4 @@
-console.log("Teste, clicar no f12");
+console.log("Abaixo estão os códigos de Javascript do index.html");
 
 /* O código abaixo é para os botões */
 
