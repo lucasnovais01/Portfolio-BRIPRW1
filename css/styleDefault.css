@@ -59,27 +59,7 @@ button:hover {
 
 /* --- FIM DO HEADER --- */
 
-/* --- MAIN --- */
 
-main {
-    padding: 20px;
-}
-section {
-    margin-bottom: 20px;
-}
-.telaPre {
-    padding: 10px;
-    margin: 0;
-    background-color: #ffffff;
-    border-radius: 5px;
-}
-pre {
-    margin-left: -10%;
-    margin-bottom: -1%;
-    font-family: 'Courier New', monospace;
-    color: rgb(0, 99, 0);
-    box-sizing: border-box;
-}
 /* --- SECTION 2 GITHUB--- */
 .gitHub {
     padding: 10px;
@@ -94,6 +74,19 @@ pre {
     box-sizing: border-box;
     margin-bottom: -1%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* --- COMEÇO DO FOOTER --- */
 

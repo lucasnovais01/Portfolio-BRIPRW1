@@ -1,0 +1,24 @@
+
+/* --- Armazenamento de CSS temporário do código sem uso, não fazer o @import ---  */
+
+/* --- MAIN --- */
+
+main {
+    padding: 20px;
+}
+section {
+    margin-bottom: 20px;
+}
+.telaPre {
+    padding: 10px;
+    margin: 0;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+pre {
+    margin-left: -10%;
+    margin-bottom: -1%;
+    font-family: 'Courier New', monospace;
+    color: rgb(0, 99, 0);
+    box-sizing: border-box;
+}

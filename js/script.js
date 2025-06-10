@@ -84,7 +84,7 @@ document.getElementById(sectionId).style.display = "block"; = Após esconder tod
 Resumo: O código primeiro esconde todas as seções e, em seguida, exibe a seção correspondente ao ID passado para a função.
 */
 
-// O código abaixo é para os botões do main do index.html
+// PROJETO DE MENU, temporiamente parado
 // PARTE 1:
 document.getElementById("variaveisBtn").addEventListener("click", function() {
     toggleSections("variavelSection");
