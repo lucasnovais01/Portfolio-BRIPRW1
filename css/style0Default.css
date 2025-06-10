@@ -1,0 +1,210 @@
+/* --- Estilo padrão para o site --- */
+:root {
+    --cor-background: black;
+    --cor-tipografia: white; 
+
+    --cor-primaria: #333;
+    --cor-secundaria: #555;
+}
+/* --- COMEÇO DO CSS --- */
+
+/* Padronização pra todas as coisas do site */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;    /* Suaviza fontes, em alguns navegadores, tipo o Chrome */
+}
+
+body {
+  background-color: red;
+  color: black;
+
+  width: 100%;
+  min-height: 3000px;
+
+  display: grid;
+  grid-template-columns: 1fr minmax(300px, 980px) 1fr; /* 3 colunas: laterais e central */
+
+  grid-template-rows: 100px 1fr; /* 2 linhas: header e conteúdo, se no lugar do 200px for auto, ele vai até o total */ 
+  min-height: 100vh;
+}
+body, h1, h2, ul, li, p, dd, dt, dl { /* Limpar a formatação é importante */
+  margin: 0px; 
+  padding: 0px;
+} /* Zerando as configurações do browser(navegador), é mais facil usar o asterisco que é global */
+
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%; /*evitar que as imagem ocupem mais que 100% do container */
+}
+ul {
+  list-style: none; /* zera o estilo da lista (a bolinha atrás) */
+}
+
+
+
+/* --- MANIPUÇÃO DO GRID-TEMPLATE --- */
+
+
+.col-bg{
+  z-index: 0;
+}
+   /* Cores de fundo para as colunas e linhas DO GRID TEMPLATE */
+.col-bg-1 {
+  grid-column: 1;
+  grid-row: 2 / -1; /* Da linha 2 até a última linha */
+  background: gray; /* cor da coluna 1 */
+}
+.col-bg-2 {
+  grid-column: 2;
+  grid-row: 2 / -1; /* Da linha 2 até a última linha */
+  background: #69ff69; /* cor da coluna 2 */
+}
+.col-bg-3 {
+  grid-column: 3;
+  grid-row: 2 / -1; /* Da linha 2 até a última linha */
+  background: #ccccff; /* cor da coluna 3 (exemplo, pode trocar) */
+}
+.row-bg-1 {
+  grid-column: 1 / -1;   /* Ocupa todas as colunas */
+  grid-row: 1;           /* Só na primeira linha */
+  background: #69ff69;   /* Escolha a cor que quiser para a linha 1 */
+  z-index: 0;
+}
+
+header.grid-section {
+  grid-column: 2;
+  grid-row: 1;
+  background: #14532d; /* verde bem escuro */
+  color: #fff;         /* texto branco para contraste */
+  width: 100%;
+  z-index: 1;
+}
+
+    /* Garanta que o conteúdo fique acima das cores de fundo */
+header, main, footer, .col-esquerda, .col-direita {
+  position: relative;
+  z-index: 1;
+}
+
+/* --- FINAL DA MANIPULAÇÃO DO GRID-TEMPLATE --- */
+
+main {
+  grid-column: 2; /* Faz o main ocupar só a coluna central */
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza horizontalmente */
+  justify-content: flex-start; /* Alinha ao topo, pode usar center para centralizar verticalmente */
+  min-height: 60vh; /* Opcional: altura mínima para ajudar na centralização */
+}
+
+.col-esquerda {
+  grid-column: 1;
+  grid-row: 2;
+}
+.col-direita {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+
+
+
+.apresentacao {
+    display: flex;
+    align-items: center;
+    gap: 24px; /* Espaço padrão entre imagem e texto */
+    margin: 32px 0 24px 0;
+    width: 100%;
+    max-width: 600px;
+    justify-content: flex-start;
+}
+
+.foto-perfil {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #333;
+    background: #fff;
+    margin-right: 24px;
+    align-self: flex-start;
+    margin-left: -40px; /* Joga só a imagem mais para a esquerda */
+}
+
+.info-perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha nome e sigla à esquerda */
+}
+
+.nome-perfil {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 0;
+}
+
+.curso-perfil {
+    font-size: 1.1rem;
+    color: #14532d;
+    margin-top: 0;
+    margin-left: 2px;
+    letter-spacing: 1px;
+}
+
+.conteudo {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    padding: 24px 32px;
+    margin-bottom: 32px;
+    width: 100%;
+    max-width: 600px;
+    text-align: left;
+    animation: fadeIn 1s;
+}
+
+.conteudo h2 {
+    margin-top: 0;
+    color: #14532d;
+    font-size: 1.5rem;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+/* --- SECTION 2 GITHUB--- */
+.gitHub {
+    padding: 10px;
+    margin: 0;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+.gitHub pre {
+    margin-left: -10%;
+    font-family: 'Courier New', monospace;
+    color: rgb(0, 99, 0);
+    box-sizing: border-box;
+    margin-bottom: -1%;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,2 +1,4 @@
-@import 'styleDefault.css';
-@import 'styleTop.css';
+@import 'style0Default.css';
+@import 'style1Top.css';
+@import 'style2Main.css';
+@import 'style3Bottom.css';

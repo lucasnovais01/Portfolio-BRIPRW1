@@ -1,0 +1,56 @@
+
+/* --- COMEÇO DO FOOTER --- */
+
+footer {
+    grid-column: 2;
+    grid-row: 2;
+    
+    position: fixed;     /* Comando necessário pra manter o rodapé no fundo */
+    bottom: 0;           /*Este comando vai ajudar a manter o rodapé no fundo, pq no body eu descrevi altura em 100%*/
+    width: 100%;
+    background-color: #1b1b1b;
+    color: white;
+    padding: 10px 0 10px 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.rodape {
+    display: flex;
+    align-items: center; /* Alinha o conteúdo no centro verticalmente */
+}
+.rodape p {
+    margin: 0;
+    padding-right: 10px;
+}
+
+/* icone github*/
+.contato ul {
+    list-style: none;
+    padding: 0;
+}
+.contato ul li {
+    display: inline-flex;
+    align-items: center; /* Alinha a imagem e o texto no centro verticalmente */
+}
+.contato ul li a {
+    color: cyan;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+/*Frescuras -> deletar depois */
+.contato ul li a:hover {
+    color: greenyellow;
+}
+.contato ul li a:visited {
+    color: blue;
+}
+.contato ul li a:active {
+    font-size: 199px;
+    color: red;
+}
+.contato ul li a img {
+    margin-right: 8px;
+    margin-left: 10px;
+}
