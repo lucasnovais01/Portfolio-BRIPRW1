@@ -15,26 +15,22 @@
 
 </head>
 <body>
-    <!-- DICA PRA PODER USAR O GRID-TEMPLATE, COLOCAR CORES NOS GRID -->
-    <div class="col-bg col-bg-1"></div>
-    <div class="col-bg col-bg-2"></div>
-    <div class="col-bg col-bg-3"></div>
-    <div class="row-bg-1"></div>
-
-    <header class="menu">
+    <header>
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Aulas</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Ferramentas</a></li>
-            </ul>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Aulas</a></li>
+                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#">Ferramentas</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-        
+
     <main>
-      <!-- Div de apresentação -->
-        <section class="entrada">
+      <!-- Sessão de apresentação -->
+        <section class="primeiraSessao">
             <div class="apresentacao">
                 <img src="https://static.wixstatic.com/media/409a49_a703a52a1f604643bb6000befe48567e~mv2.jpg/v1/crop/x_0,y_31,w_587,h_740/fill/w_177,h_226,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/409a49_a703a52a1f604643bb6000befe48567e~mv2.jpg" alt="Foto de Lucas Novais de Oliveira" class="foto-perfil">
                 <div class="info-perfil">
@@ -51,29 +47,23 @@
             </div>
         </section>
 
-
-
-
-
-      <!-- nova seção com informações -->
-      <section class="dicaGithub">
-            <h3>Como fazer upload no repositório do GitHub</h3><br>
-            <h4>Primeiro:</h4><br>
-            <p>Após ter criado o repositório diretamente no github ou através do VisualCode</p>
-            <p>Abra o terminal no VisualCode e digite:</p><br>
-            <div class="gitHub">
-                <pre>
-                    git config --global user.email "novais.oliveira@aluno.ifsp.edu.br"
-                    git config --global user.name "lucasnovais01"
-                </pre>
+        <!-- Sessão com informações -->
+        <section class="segundaSessao">
+            <div class="tutorial">
+                <h3>Como fazer upload no repositório do GitHub</h3><br>
+                <h4>Primeiro:</h4><br>
+                <p>Após ter criado o repositório diretamente no github ou através do VisualCode</p>
+                <p>Abra o terminal no VisualCode e digite:</p><br>
+                <div class="gitHub">
+                    <pre>
+                        git config --global user.email "novais.oliveira@aluno.ifsp.edu.br"
+                        git config --global user.name "lucasnovais01"
+                    </pre>
+                </div>
             </div>
         </section>
 
-
     </main>
-
-    <div class="col-esquerda"></div>
-    <div class="col-direita"></div>
 
     <footer>
         <div class="rodape">
@@ -91,7 +81,6 @@
             </ul>
         </div>        
     </footer>
-
 
     <script src="./js/script.js"></script> <!-- Código para puxar as alterações do javascript, precisa sempre estar no final da página -->
 </body>
