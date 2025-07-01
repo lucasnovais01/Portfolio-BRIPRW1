@@ -49,3 +49,25 @@
   color: #7dd3fc;
   font-style: italic;
 }
+
+.aulas-menu {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.aula-tab {
+  background: #14532d;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 22px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.aula-tab.active,
+.aula-tab:hover {
+  background: #1e293b;
+}

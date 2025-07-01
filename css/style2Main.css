@@ -18,6 +18,8 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  margin: 80px 0 80px 0;;
 }
 
 .apresentacao {
@@ -27,7 +29,7 @@ main {
   flex-direction: row;
   align-items: center;
 
-  justify-content: space-around;
+  justify-content: space-between;
 
   background-color: var(--cor-background);
 }
@@ -37,7 +39,7 @@ main {
   display: flex;
   flex-direction: column;
 
-  padding: 40px 30px 40px 30px;
+  padding: 40px 30px 90px 30px;
   color: var(--cor-tipografia);
 
 }
@@ -62,6 +64,12 @@ main {
   background: #fff;
 }
 
+
+
+
+
+
+
 .titulo, .conteudo {
   display: flex;
   flex-direction: column;
@@ -71,13 +79,13 @@ main {
   box-shadow: 0 2px 12px rgba(0,0,0,0.07);
   animation: fadeIn 1s;
   padding: 23px;
-  width: 100%;
-  max-width: 90%;
+  width: 80%;
   text-align: left;
   animation: fadeIn 1s;
 }
 
 .titulo {
+  margin-top: 100px;
   display: flex;
   justify-content: center; /* Centraliza o conteúdo filho horizontalmente */
   align-items: left;     /* Centraliza verticalmente */

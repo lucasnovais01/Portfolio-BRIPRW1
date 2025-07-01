@@ -30,45 +30,56 @@
 
 
     <main>
-        <section class="aula-bloco">
-          <h3>Aula 18/03/2025 - Variáveis em JavaScript</h3>
-          <div class="botoes-aula">
-            <button id="variaveisBtn">Variáveis</button>
-          </div>
-          <div class="conteudo-aula" id="variavelSection">
-            <ol>
-              <li>
-                <strong>Declare uma variável com seu nome:</strong>
-                <div class="codigo">
-                  <span class="comentario">// Exemplo:</span><br>
-                  <code>var nome = "Francisco";</code><br>
-                  <code>console.log(nome);</code>
-                </div>
-              </li>
-              <li>
-                <strong>Declare uma variável com a sua idade:</strong>
-                <div class="codigo">
-                  <code>var idade = 59;</code><br>
-                  <code>console.log(idade);</code>
-                </div>
-              </li>
-              <li>
-                <strong>Declare uma variável com a sua comida preferida:</strong>
-                <div class="codigo">
-                  <code>var comida = "Pizza";</code><br>
-                  <code>console.log(comida);</code>
-                </div>
-              </li>
-              <li>
-                <strong>Declare 5 variáveis com diferentes valores:</strong>
-                <div class="codigo">
-                  <code>var x = 10, y = 20, z = 5, a = "valor", b = "total";</code><br>
-                  <code>console.log(x, y, z, a, b);</code>
-                </div>
-              </li>
-            </ol>
-          </div>
-        </section>
+      <section class="aulas-menu">
+        <button class="aula-tab" data-aula="aula1">01 - Introdução ao Javascript</button>
+        <button class="aula-tab" data-aula="aula2">02 - Manipulando DOM</button>
+        <button class="aula-tab" data-aula="aula3">03 - Efeitos no DOM</button>
+      </section>
+
+      <section class="aula-bloco" id="aula1" style="display:block;">
+        <h3>01 - Introdução ao Javascript</h3>
+        <div class="botoes-aula">
+          <button class="topico-btn" data-topico="variaveis">Variáveis</button>
+          <button class="topico-btn" data-topico="tipos">Tipos de Dados</button>
+          <!-- Adicione mais botões conforme necessário -->
+        </div>
+        <div class="conteudo-aula" id="variaveis" style="display:block;">
+          <!-- Conteúdo do tópico Variáveis -->
+          <!-- Exemplo já mostrado anteriormente -->
+        </div>
+        <div class="conteudo-aula" id="tipos" style="display:none;">
+          <!-- Conteúdo do tópico Tipos de Dados -->
+        </div>
+        <!-- Adicione mais divs de conteúdo para outros tópicos -->
+      </section>
+
+      <section class="aula-bloco" id="aula2" style="display:none;">
+        <h3>02 - Manipulando DOM</h3>
+        <div class="botoes-aula">
+          <button class="topico-btn" data-topico="seletores">Seletores</button>
+          <button class="topico-btn" data-topico="eventos">Eventos</button>
+          <!-- Adicione mais botões conforme necessário -->
+        </div>
+        <div class="conteudo-aula" id="seletores" style="display:block;">
+          <!-- Conteúdo do tópico Seletores -->
+        </div>
+        <div class="conteudo-aula" id="eventos" style="display:none;">
+          <!-- Conteúdo do tópico Eventos -->
+        </div>
+        <!-- Adicione mais divs de conteúdo para outros tópicos -->
+      </section>
+
+      <section class="aula-bloco" id="aula3" style="display:none;">
+        <h3>03 - Efeitos no DOM</h3>
+        <div class="botoes-aula">
+          <button class="topico-btn" data-topico="efeitos">Efeitos Visuais</button>
+          <!-- Adicione mais botões conforme necessário -->
+        </div>
+        <div class="conteudo-aula" id="efeitos" style="display:block;">
+          <!-- Conteúdo do tópico Efeitos Visuais -->
+        </div>
+        <!-- Adicione mais divs de conteúdo para outros tópicos -->
+      </section>
     </main>
 
     
