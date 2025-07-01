@@ -1,6 +1,10 @@
 @import 'style0Default.css';
 @import 'style1Top.css';
 @import 'style2Main.css';
-@import 'style3Bottom.css';
+@import 'style3Main.css';
+
+@import 'style5Main.css';
+
+@import 'style6Bottom.css';
 
 @import 'style8mobile.css';

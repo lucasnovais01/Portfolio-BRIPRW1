@@ -2,7 +2,7 @@ main {
   grid-column: 2; /* Faz o main ocupar só a coluna central */
   grid-row: 2;    /* A partir da segunda linha */
 
-  background-color: red;
+  background-color: var(--cor-background);
 
   display: flex;
   flex-direction: column;
@@ -18,24 +18,28 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  background-color: aqua;
 }
 
 .apresentacao {
-  width: 100%;
+  width: 80%;
   height: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  background-color: rgb(166, 255, 0);
+
   justify-content: space-around;
+
+  background-color: var(--cor-background);
 }
 
 .info-perfil{
-  background-color: magenta;
+  background-color: rgb(31, 31, 31);
   display: flex;
   flex-direction: column;
+
+  padding: 40px 30px 40px 30px;
+  color: var(--cor-tipografia);
+
 }
 .info-perfil span {
   font-size: 250%;
@@ -50,8 +54,8 @@ main {
   letter-spacing: 1px;
 }
 .foto-perfil {
-  width: 180px;
-  height: 180px;
+  width: 220px;
+  height: 230px;
   object-fit: cover;
   border-radius: 50%;
   border: 3px solid #333;
@@ -115,31 +119,8 @@ main {
   to { opacity: 1; transform: translateY(0);}
 }
 
-/* --- SEGUNDA DIV --- */
 
-.segundaSessao {
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  background-color: rgb(255, 0, 238);
-
-  padding: 5% 0 0 0;
-
-  margin-top: 20px;
-}
-
-.tutorial {
-  width: 100%;
-  height: 100%;
-
-  padding: 10%;
-
-  background-color: red;
-}
-
-/* --- SECTION 2 GITHUB--- */
+/* --- SECTION 3 GITHUB--- */
 .gitHub {
   background-color: #ffffff;
   border-radius: 5px;

@@ -1,0 +1,272 @@
+:root {
+  --cor-body-background: #faf6ed; /* cor de funda da página */
+  --cor-tipografia-geral: #222;   /* cor para letras - tipografia */
+  --cor-menu-background: #fa9a0a; /* cor de fundo para o menu */
+  --cor-titulo-animais: #c13829; /* cor dos nomes dos amimais */
+  --cor-detalhe-background: #efa536; 
+  --cor-tipografia-faq:#e54;
+}
+
+
+body, h1, h2, ul, li, p, dd, dt, dl {
+  margin: 0px;   /* zerando as configurações do navegador */
+  padding: 0px;
+}
+
+img {
+  display: block;
+  max-width: 100%; /* evitar que as imagens ocupe mais de 100% do container */
+}
+
+ul {
+  list-style: none; /* zera os estilo da lista */
+}
+
+body{
+  background: var(--cor-body-background);
+  color:var(--cor-tipografia-geral);
+  -webkit-font-smoothing: antialiased;
+  display: grid;
+  grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
+}
+
+.menu {
+  grid-column: 3 / 5;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background: var(--cor-menu-background);
+}
+
+.menu ul {
+  display: flex; /*colocar um item do lado do outro */
+  flex-wrap: wrap; /* colocar os elementos em uma nova linha, caso não couber na mesma */
+  padding: 10px;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px;
+  margin-right: 10px;
+  color: var(--cor-tipografia-geral);
+  text-decoration: none;
+  font-family: 'Roboto', monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.87rem;
+  letter-spacing: .1em;
+}
+
+.grid-section {
+  grid-column: 2 / 6;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  grid-gap:20px;
+  margin-bottom: 4rem;
+}
+
+.titulo {
+  font-family: 'Roboto', Georgia, 'Times New Roman', Times, serif;
+  font-size: 6rem;
+  line-height: 1;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  grid-column: 1 / 4;
+}
+
+.animais-grid {
+  display: flex; /* colocar um ao lado do outro*/
+  flex-direction: column; /* dar uma direção coluna*/
+  gap:20px; /* espaço entre os elementos */
+}
+
+.animal-item {
+   display: flex;
+   align-items: flex-start;
+   gap: 20px;
+}
+
+.animais h2{
+  font-family: 'Roboto', monospace;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  margin-bottom: 1rem;
+  color: var(--cor-titulo-animais)
+}
+
+.animais p {
+  font-family: 'Roboto', Arial;
+  list-style: 1.2;
+  margin-bottom: 1rem;
+}
+
+.faq-lista {
+  grid-column: 1;
+}
+
+.faq-lista dt {
+  font-family: 'Roboto', monospace;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: .5rem;
+  color:var(--cor-tipografia-faq);
+
+}
+
+.faq-lista dt::before {
+  content:'';
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  margin-right: 10px;
+  background: var(--cor-detalhe-background);
+}
+
+.faq-lista dd {
+  font-family: Helvetica, sans-serif;
+  margin-bottom: .5rem;
+  margin-left: 30px;
+}
+
+.dados {
+  grid-column: 1;
+}
+
+.dados li {
+  margin-bottom: 1rem;
+  font-family: Helvetica, Arial;
+}
+
+.dados li::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  margin-right: 10px;
+  background: var(--cor-detalhe-background);
+}
+
+.copy {
+   grid-column: 3 / 5;
+   margin-bottom: 2rem;
+   background: var(--cor-menu-background);
+}
+
+.copy p {
+  padding: 20px;
+  font-family: 'Roboto', monospace;
+  font-weight: bold;
+}
+
+@media (max-width: 700px){
+
+  body {
+    grid-template-columns: 1fr;
+  }
+
+  .menu, .grid-section, .copy {
+    grid-column: 1;
+  }
+
+  .grid-section {
+    grid-template-columns: 1fr;
+
+  }
+
+  .animal-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .faq-lista, .dados {
+    grid-column: 1/3;
+  }
+
+  .grid-section h1 {
+    font-size: 3rem;
+  }
+
+  .menu {
+    margin-top: 0px;
+  }
+
+  .copy {
+    margin-bottom: 0px;
+  }
+
+}
+ /* css para ocultar e mostrar as imagens na página 
+ *  e aplicar efeitos de entrada da imagen ativa. 
+ *  evidenciar a imagens "foco";
+ */
+.animal-item.oculto {
+  display: none !important;
+}
+
+.animal-item.ativo {
+  animation: show 1s ease forwards;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0 );
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0,0,0,);
+  }
+}
+
+.animal-item img {
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  box-shadow: none;
+  transform: scale(1);
+  border-radius: 8px;
+}
+
+.animal-item.ativo img {
+  border: 3px solid #7f7b7d; /* cinza suave */
+  box-shadow: 0 0 15px rgba(0,0,0, 0.3);
+  transform: scale(1.05);  /* leve zoom */
+}
+
+/*  estilo para navegação com accordion  */
+
+.js-accordion dd {
+  display: none;
+}
+
+.js-accordion dt::after {
+  content: '↴';
+  margin-left: 10px;
+}
+
+.js-accordion dd.ativo {
+  display: block;
+  animation: slideDown .5s forwards;
+}
+
+.js-accordion dt.ativo::after{
+  content:'↱';  
+}
+
+@keyframes slideDown {
+   
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    max-height: 200px;
+    opacity: 1; 
+  }
+}
+
+
+
+
