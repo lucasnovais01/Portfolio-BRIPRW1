@@ -10,6 +10,8 @@ main {
   align-items: center; /* Centraliza horizontalmente */
   justify-content: flex-start; /* Alinha ao topo, pode usar center para centralizar verticalmente */
   min-height: auto; /* Opcional: altura mínima para ajudar na centralização */
+
+  font-family: var(--fonte-principal);
 }
 
 .primeiraSessao {
@@ -33,7 +35,6 @@ main {
 
 .info-perfil{
   background-color: magenta;
-  font-family: 'Montserrat', sans-serif;
   display: flex;
   flex-direction: column;
 }
