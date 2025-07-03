@@ -2,7 +2,7 @@ main {
   grid-column: 2; /* Faz o main ocupar só a coluna central */
   grid-row: 2;    /* A partir da segunda linha */
 
-  background-color: var(--cor-background);
+  background-color: gray;
 
   display: flex;
   flex-direction: column;
