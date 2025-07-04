@@ -9,6 +9,7 @@
   --cor-paragrafo: yellow;
   
   --fonte-principal: 'Montserrat', sans-serif;
+  --fonte-secundaria: 'Consolas', 'Courier New', monospace;
 }
 
 * {

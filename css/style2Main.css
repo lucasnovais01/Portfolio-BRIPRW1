@@ -2,7 +2,7 @@ main {
   grid-column: 2; /* Faz o main ocupar só a coluna central */
   grid-row: 2;    /* A partir da segunda linha */
 
-  background-color: gray;
+  background-color: rgb(30, 30, 30);
 
   display: flex;
   flex-direction: column;
@@ -10,7 +10,7 @@ main {
   justify-content: flex-start; /* Alinha ao topo, pode usar center para centralizar verticalmente */
   min-height: auto; /* Opcional: altura mínima para ajudar na centralização */
 
-  font-family: var(--fonte-principal);
+  font-family: var(--fonte-secundaria);
 }
 
 .primeiraSessao {
@@ -31,19 +31,19 @@ main {
 
   justify-content: space-between;
 
-  background-color: var(--cor-background);
+  gap: 50px;
 }
 
+/* --- TEXTO ao lado da foto --- */
+
 .info-perfil{
-  background-color: var(--cor-background);
+  color: var(--cor-tipografia);
+
   display: flex;
   flex-direction: column;
 
-  padding: 40px 30px 90px 30px;
-  color: var(--cor-tipografia);
-
-}
-.info-perfil span {
+  padding: 0px 30px 90px 30px;
+  
   font-size: 250%;
 }
 .nome-perfil {
@@ -51,24 +51,21 @@ main {
   letter-spacing: 2px;
 }
 .curso-perfil {
-  margin-top: 0;
   margin-left: 2px;
   letter-spacing: 1px;
 }
+
+/* --- FOTO do PERFIL --- */
+
 .foto-perfil {
   width: 220px;
   height: 230px;
   object-fit: cover;
   border-radius: 50%;
-  border: 3px solid #333;
-  background: #fff;
+  border: 3px solid #00ff55;
 }
 
-
-
-
-
-
+/* --- SEÇÃO 2 TUTORIAL --- */
 
 .titulo, .conteudo {
   display: flex;
