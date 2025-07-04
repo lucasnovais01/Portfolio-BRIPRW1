@@ -1,3 +1,6 @@
+
+
+
 // ...existing code...
 export function setupAccordion() {
     const toggle = document.getElementById('toggleSobreMim');

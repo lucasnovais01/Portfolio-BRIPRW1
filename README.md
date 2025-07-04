@@ -7,7 +7,16 @@ Este repositório tem como objetivo fazer uso das ferramentas e códigos apreend
 
 Aqui estarão disponíveis:
 
-A
+Como fazer upload no repositório do GitHub
+
+Primeiro:
+
+Após ter criado o repositório diretamente no github ou através do VisualCode
+
+Abra o terminal no VisualCode e digite(exemplo):
+
+    git config --global user.email "novais.oliveira@aluno.ifsp.edu.br"
+    git config --global user.name "lucasnovais01"
 
 
 *Dicas ao trabalhar com Branch:

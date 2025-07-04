@@ -35,7 +35,7 @@ main {
 }
 
 .info-perfil{
-  background-color: rgb(31, 31, 31);
+  background-color: var(--cor-background);
   display: flex;
   flex-direction: column;
 
