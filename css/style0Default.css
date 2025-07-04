@@ -3,6 +3,7 @@
 /* --- Estilo padrão para o site --- */
 :root {
   --cor-background: black;
+  --cor-gradiente: linear-gradient(to bottom, #111 0%, #1a237e 100%);
   --cor-tipografia: white;
   --cor-titulo: #333;
   --cor-subtitulo: #555;
@@ -20,8 +21,7 @@
 }
 
 body {
-  background-color: rgb(0, 0, 0);
-  color: var(--cor-background);
+  background: linear-gradient(to bottom, #111 0%, #1a237e 100%);
 
   width: 100%;
   min-height: 3000px;
@@ -54,4 +54,12 @@ img {
 
 ul {
   list-style: none; /* zera o estilo da lista (a bolinha atrás) */
+}
+
+/* --- Frescura pra deixar legal o titulo --- */
+
+.tag-vscode {
+  color: #569CD6;
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-size: 1em;
 }

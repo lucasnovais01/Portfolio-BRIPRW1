@@ -14,28 +14,30 @@ header {
     border-bottom-right-radius: 10px;
 }
 
-.menu ul {    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 38px 0; /* Ajuste conforme necessário */
+.menu ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 38px 0;
 }
 
 a {
     font-family: var(--fonte-principal);
+    color: var(--cor-tipografia);
     font-size: 120%;
     text-align: center;
-    color: var(--cor-tipografia);
-
 }
 
 /* Adiciona o " | " entre os links, exceto no último */
+/*
 header nav ul li:not(:last-child)::after {
     content: " | ";
     color: var(--cor-tipografia);
     margin-left: 10px;
     margin-right: 10px; 
 }
+*/
+
 /* --- BOTÕES do cabeçalho --- */
 
 header nav ul li a:hover{

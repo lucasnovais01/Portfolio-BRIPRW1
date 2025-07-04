@@ -21,7 +21,14 @@
                 <ul>
                     <li><a href="/index.html">Home</a></li>
                     <li><a href="/aulas.html">Programação para Web 1</a></li>
-                    <li><a href="/projetos.html">Projetos</a></li>
+                    <li class="menu-projetos">
+                    <a href="#">Projetos</a>
+                    <ul class="submenu-projetos">
+                        <li><a href="#">Projeto 1</a></li>
+                        <li><a href="#">Projeto 2</a></li>
+                        <li><a href="#">Projeto 3</a></li>
+                    </ul>
+                    </li>
                     <li><a href="#">Ferramentas</a></li>
                 </ul>
             </div>
@@ -36,13 +43,19 @@
                 <div class="info-perfil">
                     <span class="nome-perfil">Lucas Novais de Oliveira</span>
                     <span class="curso-perfil">BI303268X</span>
+                    <span class="descricao-perfil">
+                      <span class="tag-vscode">&lt;span&gt;</span>
+                      Aluno do curso de Tecnologia em Sistemas para Internet (TSI), 3º semestre, do IFSP - Instituto Federal de São Paulo, campus Birigui.
+                      <span class="tag-vscode">&lt;/span&gt;</span>
+                    </span>
+
+                    <div class="btn-sobre-mim" id="toggleSobreMim">
+                        <h2><a href="#">Clique aqui para saber mais</a></h2>
+                    </div>
                 </div>
             </div>
-
-            <div class="titulo">
-                <h2><a href="#" id="toggleSobreMim">Sobre mim</a></h2>
-            </div>
             <div class="conteudo" id="sobreMimConteudo">
+                <h1>Sobre mim</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi eu consectetur cursus, nisl erat dictum urna, nec dictum enim enim nec urna. Mauris euismod, sapien eu facilisis cursus, enim urna dictum enim, nec dictum enim enim nec urna.</p>
             </div>
         </section>
